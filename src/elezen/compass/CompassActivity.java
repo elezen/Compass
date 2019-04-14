@@ -38,7 +38,7 @@ public class CompassActivity extends Activity {
     }  
 
     private void setDirection(float deg){
-    	if(Math.abs(lastDeg-deg)<0.1)return;
+    	if(Math.abs(lastDeg-deg)<0.1F)return;
     	lastDeg=deg;
     	if(mFirst){
     		mImage.setPivotX(mImage.getWidth()/2);
